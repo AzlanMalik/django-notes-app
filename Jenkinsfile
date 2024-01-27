@@ -8,7 +8,7 @@ pipeline {
                 git url:"https://github.com/AzlanMalik/django-notes-app.git", branch: "main"
             }
         }
-        stage("Build"){
+        stage("Build stage"){
             steps {
                 echo "Building the image"
                 sh "docker build -t notes-app ."
